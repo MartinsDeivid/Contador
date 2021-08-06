@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contador</title>
+    <style>
+        body {
+        background: #333;
+        font-family: 'Courier New', Courier, monospace; 
+        font-size: 50px;
+        text-align: center;
+        }
+        button{
+            background-color: blue;
+        }
+        span {
+            font-family:blue ;
+        }
+    </style>
+</head>
+<body>
+    </body>
+    <button onclick="subtrair()">-</button>
+    <span>0</span>
+    <button onclick="adicionar()">+</button>
+    <script>
+        const span = document.querySelector("span")
+        function adicionar() {
+            console.log("adicionar...")
+            // pegar o valor atual
+            const valor = parseInt(span.innerText)
+            console.log(valor)
+
+            // somar +1 ao valor atual
+            const novoValor = valor + 1
+            console.log(novoValor)
+
+            // mostrar o novo valor
+            span.innerText = novoValor
+        }
+
+        function subtrair() {
+            console.log("subtrair...")
+            const valor = parseInt(span.innerText)
+            console.log(valor)
+            const novoValor = valor - 1
+            span.innerText = novoValor
+        }
+    </script>
+</body>
+</html>
