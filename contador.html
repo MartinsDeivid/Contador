@@ -19,12 +19,16 @@
     </style>
 </head>
 <body>
+    <input type="button" onclick="funcao1()" value="Conte até 10" />
     </body>
-    <input type="alert">
     <button onclick="subtrair()">-</button>
     <span>0</span>
     <button onclick="adicionar()">+</button>
     <script>
+                function funcao1(){
+            alert("Você é fera");
+        }
+
         const span = document.querySelector("span")
         function adicionar() {
             console.log("adicionar...")
